@@ -30949,8 +30949,8 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="R51" library="rcl" deviceset="R-US_" device="R0805" value="100K"/>
 <part name="R42" library="rcl" deviceset="R-US_" device="R0805" value="100K"/>
 <part name="J8" library="SparkFun-Connectors" deviceset="POWER_JACK" device="SLT" value="VDC INPUT"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="12k"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="1K"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="13k"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0805" value="1.2K"/>
 <part name="GND20" library="supply2" deviceset="GND" device=""/>
 <part name="GND23" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0805" value="100K"/>
@@ -31150,13 +31150,13 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="R55" library="rcl" deviceset="R-US_" device="R1206" value="1R"/>
 <part name="TU" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1" value="0"/>
 <part name="V_REG" library="MK312parts" deviceset="TPS73801" device="SOT223-6" package3d_urn="urn:adsk.eagle:package:42943783/1"/>
-<part name="R56" library="rcl" deviceset="R-US_" device="R0805" value="82k"/>
 <part name="Q1" library="MK312parts" deviceset="N-HEXFET-2D_?-*" device="SOT232" package3d_urn="urn:adsk.eagle:package:29522/2" technology="IRLL2705"/>
 <part name="Q2" library="MK312parts" deviceset="N-HEXFET-2D_?-*" device="SOT232" package3d_urn="urn:adsk.eagle:package:29522/2" technology="IRLL2705"/>
 <part name="Q4" library="MK312parts" deviceset="N-HEXFET-2D_?-*" device="SOT232" package3d_urn="urn:adsk.eagle:package:29522/2" technology="IRLL2705"/>
 <part name="Q5" library="MK312parts" deviceset="N-HEXFET-2D_?-*" device="SOT232" package3d_urn="urn:adsk.eagle:package:29522/2" technology="IRLL2705"/>
 <part name="BR" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0R"/>
 <part name="U$2" library="MK312parts" deviceset="PAD_0805" device=""/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="S1M" device="" package3d_urn="urn:adsk.eagle:package:43460/3" value="SS34"/>
 </parts>
 <sheets>
 <sheet>
@@ -31317,15 +31317,15 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <attribute name="VALUE" x="84.455" y="113.665" size="1.778" layer="96"/>
 </instance>
 <instance part="V_REG" gate="G$1" x="86.36" y="142.24" smashed="yes"/>
-<instance part="R56" gate="G$1" x="104.14" y="137.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="102.6414" y="133.35" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="99.822" y="133.35" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="BR" gate="G$1" x="58.42" y="144.78" smashed="yes">
 <attribute name="NAME" x="54.61" y="146.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="U$2" gate="G$1" x="60.96" y="152.4" smashed="yes" rot="R180"/>
+<instance part="D1" gate="G$1" x="134.62" y="144.78" smashed="yes">
+<attribute name="NAME" x="137.16" y="145.2626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="137.16" y="142.4686" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -31428,40 +31428,24 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <wire x1="109.22" y1="132.08" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="129.54" x2="109.22" y2="127" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 <junction x="109.22" y="129.54"/>
-<wire x1="104.14" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R56" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="129.54" x2="109.22" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="132.08" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
-<junction x="104.14" y="129.54"/>
 <pinref part="V_REG" gate="G$1" pin="ADJ"/>
 </segment>
 </net>
 <net name="VM_OUT" class="2">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="144.78" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="144.78" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="144.78" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="142.24" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
-<junction x="121.92" y="144.78"/>
-<junction x="109.22" y="144.78"/>
-<wire x1="99.06" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R56" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="142.24" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-<junction x="104.14" y="144.78"/>
-<pinref part="V_REG" gate="G$1" pin="V_OUT"/>
-<wire x1="60.96" y1="152.4" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="152.4" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="PIN"/>
 <pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="BAT" gate="-1" pin="S"/>
 <wire x1="149.86" y1="106.68" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="137.16" y1="144.78" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
 <junction x="149.86" y="144.78"/>
-<pinref part="U$2" gate="G$1" pin="PIN"/>
+<wire x1="60.96" y1="152.4" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="152.4" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="2">
@@ -31572,6 +31556,21 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
 <junction x="170.18" y="144.78"/>
+</segment>
+</net>
+<net name="N$11" class="2">
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="142.24" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="144.78" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="144.78" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<junction x="109.22" y="144.78"/>
+<pinref part="V_REG" gate="G$1" pin="V_OUT"/>
+<wire x1="99.06" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="121.92" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
+<junction x="121.92" y="144.78"/>
 </segment>
 </net>
 </nets>
@@ -34154,12 +34153,12 @@ Board to case mounting screws are #4 x 1/4" sheet metal</text>
 <approved hash="104,1,233.68,99.06,9V_1,GND_1,GND,,,"/>
 <approved hash="104,1,236.22,99.06,9V_1,OUT,+9V1,,,"/>
 <approved hash="104,1,231.14,129.54,9V_1,GND_2,GND,,,"/>
-<approved hash="104,1,238.76,144.78,U$1,+V_OUT,+5V,,,"/>
-<approved hash="202,1,238.76,170.18,U$1,TRIM,,,,"/>
+<approved hash="104,1,238.76,144.78,REG5,+V_OUT,+5V,,,"/>
+<approved hash="202,1,238.76,170.18,REG5,TRIM,,,,"/>
 <approved hash="104,1,233.68,55.88,9V_2,GND_1,GND,,,"/>
 <approved hash="104,1,236.22,55.88,9V_2,OUT,+9V2,,,"/>
 <approved hash="104,1,231.14,86.36,9V_2,GND_2,GND,,,"/>
-<approved hash="104,1,99.06,144.78,V_REG,V_OUT,VM_OUT,,,"/>
+<approved hash="104,1,99.06,144.78,V_REG,V_OUT,N$11,,,"/>
 <approved hash="113,4,139.596,107.846,FRAME4,,,,,"/>
 <approved hash="113,2,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME3,,,,,"/>
