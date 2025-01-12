@@ -40,7 +40,9 @@ The firmware has not been modified, for instructions see the "firmware" folder.
 
 Fits in the stadard PACTEC case, see original BOM. 
 
-## Error 20
+## Update
 
-Some units may - more or less regularily - fail to start with "Error 20". The underlying reason is the firmware that is not tolerant againt sample variations in MOSFETs Q3, Q6.
-The "original" MK312BT has the same issues. The only reliable way to fix this is to adjust the values of resistors R32, R43 (100k). I recommend trying somewhat lower/higher values (e.g. 82k and 120k) and check if your units boots realiably then.  
+- The logic-level MOSFET IRLL2705 is currently not in stock at JLCPCB, it can be replaced by IRFL024.
+- The 5V DC-DC converter K7805MT-500R4 is no longer available. There is no plug-in replacement. Change to TPSM365R6V5 is possible (and has been done in V4 of mk312lite).
+
+
