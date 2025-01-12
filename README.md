@@ -26,7 +26,7 @@ Assembly
 You will in addition require
 - All THT parts on the other side of the control PCB (buttons + caps, pots + knobs, display, brightness pot, 5mm LEDs), see the original BOM for information.
 - Any part your manufacturer did not have in stock. In case of JLCPCB this means especially the 6 phone jacks, power socket, power switch, 42TU200 or 42TL004 transformers.
-- A lead-acid battery of your choice. You can alternatively use a 12V LiFePO4 battery (with BMS), for that you need a matching charger (instead of the 15V power supply) and have to move the "jumper" (0R resistor) from "LDO" to "DIR" position to skip the voltage regulator. If you plan to use a LiFePO4 battery from the beginning (making the device much lighter) use can you can move the 0R resistor already when ordering and leave out V_REG (TPS73801), R1, R2, C2, C3, D1 from the beginning. 
+- A lead-acid battery of your choice. You can alternatively use a 12V LiFePO4 battery (with BMS), for that you need a matching charger (instead of the 15V power supply) and have to move the "jumper" (0R resistor) from "LDO" to "DIR" position to skip the voltage regulator. If you plan to use a LiFePO4 battery from the beginning (making the device much lighter) you can move the 0R resistor already when ordering and leave out V_REG (TPS73801), R1, R2, C2, C3, D1 from the beginning. 
 
 ## Board assembly Instructions
 
