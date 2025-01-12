@@ -43,6 +43,6 @@ Fits in the stadard PACTEC case, see original BOM.
 ## Update
 
 - The logic-level MOSFET IRLL2705 is currently not in stock at JLCPCB, it can be replaced by IRFL024.
-- The 5V DC-DC converter K7805MT-500R4 is no longer available. There is no plug-in replacement. Change to TPSM365R6V5 is possible (and has been done in V4 of mk312lite).
+- The 5V DC-DC converter K7805MT-500R4 is no longer available. There is no plug-in replacement. Change to TPSM365R6V5 is possible (and has been done in V4 of mk312lite). If somebody is interested I will create a modified design.
 
 
