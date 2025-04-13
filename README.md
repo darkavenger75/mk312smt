@@ -18,7 +18,7 @@ PCB
 Assembly
 - Economic, Bottom side (control PCB) / Top side (main PCB), as many PCBs as you wish. "Confirm Parts Placement" recommended. 
 - Automatic selection of parts after uploading BOM and CPL worked well, but better check for obvious errors here and in part placement. 
-- BOMs contain all components on the respective side, including the THT ones. If you want to place the THT parts yourself just deselect them.
+- BOMs contain all components, including the THT ones. If you want to place the THT parts yourself just deselect them.
 - The LTC1661CMS or IMS is often not in stock. You might like to pre-order it to avoid buying it elsewhere and solding this tiny part.  
 
 ## Parts ordering information
