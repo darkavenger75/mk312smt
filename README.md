@@ -42,7 +42,7 @@ Fits in the stadard PACTEC case, see original BOM.
 
 ## Update
 
-- The logic-level MOSFET IRLL2705 is currently not in stock at JLCPCB, it can be replaced by ZXMN4A06GTA or NDT3055L.
+- If the logic-level MOSFET IRLL2705 is not in stock at JLCPCB, it can be replaced by ZXMN4A06GTA or NDT3055L.
 - The 5V DC-DC converter K7805MT-500R4 is no longer available. A version with a PTH version has been added.
 
 
