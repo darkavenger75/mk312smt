@@ -8355,13 +8355,15 @@ In this library the device names are the same as the pin names of the symbols, t
 </library>
 <library name="MK312parts">
 <packages>
-<package name="SMDRI129-220MT">
-<wire x1="-6.25" y1="-6.25" x2="6.25" y2="-6.25" width="0.127" layer="21"/>
-<wire x1="6.25" y1="-6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
-<wire x1="-6.25" y1="-6.25" x2="-6.25" y2="6.25" width="0.127" layer="21"/>
-<wire x1="-6.25" y1="6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="4.95" dx="5.4" dy="2.9" layer="1"/>
-<smd name="P$2" x="0" y="-4.95" dx="5.4" dy="2.9" layer="1"/>
+<package name="FXL0630-100-M">
+<wire x1="-3.5" y1="3.3" x2="3.5" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.3" x2="3.5" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.3" x2="-3.5" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.3" x2="3.5" y2="-3.3" width="0.127" layer="21"/>
+<text x="-3.175" y="4.445" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.175" y="-5.715" size="1.27" layer="21">&gt;VALUE</text>
+<smd name="P$1" x="-3.03" y="0" dx="2.37" dy="3.5" layer="1"/>
+<smd name="P$2" x="3.03" y="0" dx="2.37" dy="3.5" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -8374,12 +8376,12 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMDRI129-220MT">
+<deviceset name="FXL0630-100-M">
 <gates>
 <gate name="G$1" symbol="L-EURO" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMDRI129-220MT">
+<device name="" package="FXL0630-100-M">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -9968,7 +9970,7 @@ W = angled&lt;p&gt;
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$1" library="MK312parts" deviceset="SMDRI129-220MT" device="" value="22uH"/>
+<part name="L1" library="MK312parts" deviceset="FXL0630-100-M" device="" value="10uH"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -10019,7 +10021,7 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY3" gate="GND" x="101.6" y="83.82" smashed="yes">
 <attribute name="VALUE" x="98.933" y="80.645" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="182.88" y="121.92" smashed="yes">
+<instance part="L1" gate="G$1" x="182.88" y="121.92" smashed="yes">
 <attribute name="NAME" x="179.07" y="123.4186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="179.07" y="118.618" size="1.778" layer="96"/>
 </instance>
@@ -10188,7 +10190,7 @@ W = angled&lt;p&gt;
 <net name="SW" class="2">
 <segment>
 <pinref part="U1" gate="G$1" pin="SW"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="121.92" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
@@ -10243,7 +10245,7 @@ W = angled&lt;p&gt;
 <pinref part="U1" gate="G$1" pin="CSP"/>
 <wire x1="149.86" y1="116.84" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="116.84" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
