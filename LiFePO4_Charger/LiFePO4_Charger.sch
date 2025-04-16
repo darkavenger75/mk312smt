@@ -10240,10 +10240,14 @@ W = angled&lt;p&gt;
 </net>
 <net name="N$7" class="0">
 <segment>
-<junction x="190.5" y="121.92"/>
 <pinref part="U1" gate="G$1" pin="CSP"/>
 <wire x1="149.86" y1="116.84" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="121.92" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="116.84" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
+<junction x="190.5" y="121.92"/>
 </segment>
 </net>
 <net name="BAT_IN" class="2">
@@ -10280,13 +10284,6 @@ W = angled&lt;p&gt;
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
