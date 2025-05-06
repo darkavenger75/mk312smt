@@ -43,7 +43,7 @@ Fits in the stadard PACTEC case, see original BOM.
 ## Update
 
 - If the logic-level MOSFET IRLL2705 is not in stock at JLCPCB, it can be replaced by ZXMN4A06GTA or NDT3055L.
-- The 5V DC-DC converter K7805MT-500R4 is no longer available. A version with a PTH version has been added.
+- The 5V DC-DC converter K7805MT-500R4 is no longer available. A version with a THT version has been added.
 - If you like to keep using your 15V power supply with the LiFePO4 battery pack you can use V2b of the main PCB and the charger daughterboard.
 
 
